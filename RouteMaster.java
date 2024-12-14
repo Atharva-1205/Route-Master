@@ -25,7 +25,6 @@ public class RouteMaster {
         Graph graph = new Graph();
 
         // Adding major cities
-        // Adding major cities
         graph.addNode("New York");
         graph.addNode("Boston");
         graph.addNode("Philadelphia");
@@ -179,6 +178,142 @@ public class RouteMaster {
 
         graph.addEdge("San Jose", "Seattle", 750);
 
+        // Reverse edges 
+        graph.addEdge("Boston", "New York", 215);
+        graph.addEdge("Philadelphia", "New York", 95);
+        graph.addEdge("Chicago", "New York", 790);
+        graph.addEdge("Atlanta", "New York", 870);
+        graph.addEdge("Miami", "New York", 1280);
+        graph.addEdge("Houston", "New York", 1630);
+        graph.addEdge("Dallas", "New York", 1550);
+        graph.addEdge("San Antonio", "New York", 1800);
+        graph.addEdge("Denver", "New York", 1780);
+        graph.addEdge("Phoenix", "New York", 2400);
+        graph.addEdge("Las Vegas", "New York", 2530);
+        graph.addEdge("Los Angeles", "New York", 2800);
+        graph.addEdge("San Diego", "New York", 2900);
+        graph.addEdge("San Jose", "New York", 2940);
+        graph.addEdge("Seattle", "New York", 2850);
+
+        graph.addEdge("Philadelphia", "Boston", 300);
+        graph.addEdge("Chicago", "Boston", 850);
+        graph.addEdge("Atlanta", "Boston", 1100);
+        graph.addEdge("Miami", "Boston", 1500);
+        graph.addEdge("Houston", "Boston", 1800);
+        graph.addEdge("Dallas", "Boston", 1730);
+        graph.addEdge("San Antonio", "Boston", 1980);
+        graph.addEdge("Denver", "Boston", 1940);
+        graph.addEdge("Phoenix", "Boston", 2460);
+        graph.addEdge("Las Vegas", "Boston", 2590);
+        graph.addEdge("Los Angeles", "Boston", 2960);
+        graph.addEdge("San Diego", "Boston", 3050);
+        graph.addEdge("San Jose", "Boston", 3100);
+        graph.addEdge("Seattle", "Boston", 3000);
+
+        graph.addEdge("Chicago", "Philadelphia", 760);
+        graph.addEdge("Atlanta", "Philadelphia", 780);
+        graph.addEdge("Miami", "Philadelphia", 1250);
+        graph.addEdge("Houston", "Philadelphia", 1600);
+        graph.addEdge("Dallas", "Philadelphia", 1500);
+        graph.addEdge("San Antonio", "Philadelphia", 1750);
+        graph.addEdge("Denver", "Philadelphia", 1720);
+        graph.addEdge("Phoenix", "Philadelphia", 2330);
+        graph.addEdge("Las Vegas", "Philadelphia", 2450);
+        graph.addEdge("Los Angeles", "Philadelphia", 2700);
+        graph.addEdge("San Diego", "Philadelphia", 2800);
+        graph.addEdge("San Jose", "Philadelphia", 2850);
+        graph.addEdge("Seattle", "Philadelphia", 2750);
+
+        graph.addEdge("Atlanta", "Chicago", 720);
+        graph.addEdge("Miami", "Chicago", 1370);
+        graph.addEdge("Houston", "Chicago", 1080);
+        graph.addEdge("Dallas", "Chicago", 970);
+        graph.addEdge("San Antonio", "Chicago", 1170);
+        graph.addEdge("Denver", "Chicago", 1000);
+        graph.addEdge("Phoenix", "Chicago", 1750);
+        graph.addEdge("Las Vegas", "Chicago", 1800);
+        graph.addEdge("Los Angeles", "Chicago", 2010);
+        graph.addEdge("San Diego", "Chicago", 2100);
+        graph.addEdge("San Jose", "Chicago", 2130);
+        graph.addEdge("Seattle", "Chicago", 2070);
+
+        graph.addEdge("Miami", "Atlanta", 660);
+        graph.addEdge("Houston", "Atlanta", 800);
+        graph.addEdge("Dallas", "Atlanta", 780);
+        graph.addEdge("San Antonio", "Atlanta", 920);
+        graph.addEdge("Denver", "Atlanta", 1400);
+        graph.addEdge("Phoenix", "Atlanta", 1600);
+        graph.addEdge("Las Vegas", "Atlanta", 1700);
+        graph.addEdge("Los Angeles", "Atlanta", 1900);
+        graph.addEdge("San Diego", "Atlanta", 2000);
+        graph.addEdge("San Jose", "Atlanta", 2050);
+        graph.addEdge("Seattle", "Atlanta", 2200);
+
+        graph.addEdge("Houston", "Miami", 1190);
+        graph.addEdge("Dallas", "Miami", 1280);
+        graph.addEdge("San Antonio", "Miami", 1430);
+        graph.addEdge("Denver", "Miami", 1720);
+        graph.addEdge("Phoenix", "Miami", 2000);
+        graph.addEdge("Las Vegas", "Miami", 2100);
+        graph.addEdge("Los Angeles", "Miami", 2300);
+        graph.addEdge("San Diego", "Miami", 2400);
+        graph.addEdge("San Jose", "Miami", 2500);
+        graph.addEdge("Seattle", "Miami", 2900);
+
+        graph.addEdge("Dallas", "Houston", 240);
+        graph.addEdge("San Antonio", "Houston", 200);
+        graph.addEdge("Denver", "Houston", 1020);
+        graph.addEdge("Phoenix", "Houston", 1200);
+        graph.addEdge("Las Vegas", "Houston", 1500);
+        graph.addEdge("Los Angeles", "Houston", 1550);
+        graph.addEdge("San Diego", "Houston", 1620);
+        graph.addEdge("San Jose", "Houston", 1700);
+        graph.addEdge("Seattle", "Houston", 1890);
+
+        graph.addEdge("San Antonio", "Dallas", 270);
+        graph.addEdge("Denver", "Dallas", 800);
+        graph.addEdge("Phoenix", "Dallas", 1000);
+        graph.addEdge("Las Vegas", "Dallas", 1050);
+        graph.addEdge("Los Angeles", "Dallas", 1400);
+        graph.addEdge("San Diego", "Dallas", 1460);
+        graph.addEdge("San Jose", "Dallas", 1500);
+        graph.addEdge("Seattle", "Dallas", 1700);
+
+        graph.addEdge("Denver", "San Antonio", 900);
+        graph.addEdge("Phoenix", "San Antonio", 990);
+        graph.addEdge("Las Vegas", "San Antonio", 1030);
+        graph.addEdge("Los Angeles", "San Antonio", 1200);
+        graph.addEdge("San Diego", "San Antonio", 1300);
+        graph.addEdge("San Jose", "San Antonio", 1350);
+        graph.addEdge("Seattle", "San Antonio", 1600);
+
+        graph.addEdge("Phoenix", "Denver", 830);
+        graph.addEdge("Las Vegas", "Denver", 750);
+        graph.addEdge("Los Angeles", "Denver", 1010);
+        graph.addEdge("San Diego", "Denver", 1100);
+        graph.addEdge("San Jose", "Denver", 1200);
+        graph.addEdge("Seattle", "Denver", 1300);
+
+        graph.addEdge("Las Vegas", "Phoenix", 300);
+        graph.addEdge("Los Angeles", "Phoenix", 400);
+        graph.addEdge("San Diego", "Phoenix", 500);
+        graph.addEdge("San Jose", "Phoenix", 650);
+        graph.addEdge("Seattle", "Phoenix", 1500);
+
+        graph.addEdge("Los Angeles", "Las Vegas", 270);
+        graph.addEdge("San Diego", "Las Vegas", 330);
+        graph.addEdge("San Jose", "Las Vegas", 430);
+        graph.addEdge("Seattle", "Las Vegas", 1250);
+
+        graph.addEdge("San Diego", "Los Angeles", 120);
+        graph.addEdge("San Jose", "Los Angeles", 340);
+        graph.addEdge("Seattle", "Los Angeles", 950);
+
+        graph.addEdge("San Jose", "San Diego", 450);
+        graph.addEdge("Seattle", "San Diego", 1050);
+
+        graph.addEdge("Seattle", "San Jose", 750);
+
         // Adding duplicate edges with higher costs to simulate alternative paths
         graph.addEdge("New York", "Boston", (int) (215 * 1.5));
         graph.addEdge("New York", "Philadelphia", (int) (95 * 1.5));
@@ -316,11 +451,11 @@ public class RouteMaster {
         graph.addEdge("San Jose", "Seattle",(int) (750 * 1.5));
 
         // Adding alternative indirect connections
-        // graph.addEdge("New York", "Seattle", 2850); // Indirect via other cities
-        // graph.addEdge("Chicago", "Seattle", 2070); // Indirect higher-cost route
-        // graph.addEdge("Phoenix", "Seattle", 1450); // Indirect higher-cost route
-        // graph.addEdge("Boston", "Miami", 1600); // Indirect higher-cost route
-        // graph.addEdge("Denver", "Miami", 1720); // Indirect higher-cost route
+        graph.addEdge("New York", "Seattle", 2850);
+        graph.addEdge("Chicago", "Seattle", 2070); 
+        graph.addEdge("Phoenix", "Seattle", 1450); 
+        graph.addEdge("Boston", "Miami", 1600); 
+        graph.addEdge("Denver", "Miami", 1720); 
 
         // Create the GUI
         JFrame frame = new JFrame("Bus Route Management");
